@@ -1,0 +1,60 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "landing page for devCorp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp --production"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "author": "SilantievMax",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/register": "^7.18.9",
+    "browser-sync": "^2.27.10",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-size": "^4.0.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
+    "gulp-webp-html": "^1.0.2",
+    "sass": "^1.55.0",
+    "webpack": "^5.74.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "D": "^1.0.0",
+    "gulp-babel": "^8.0.0"
+  }
+}

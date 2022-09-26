@@ -1,0 +1,15 @@
+body {
+    background-color: blue;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: red;
+    }
+}
+
+@import "components/footer.css";
+@import "components/ned.css";
