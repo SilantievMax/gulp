@@ -19,9 +19,9 @@ export default {
         dest: `${pathDest}/styles`,
     },
     js: {
-        src: `${pathSrc}/js/*.js`,
-        watch: `${pathSrc}/js/**/*.js`,
-        dest: `${pathDest}/js`,
+        src: `${pathSrc}/scripts/*.js`,
+        watch: `${pathSrc}/scripts/**/*.js`,
+        dest: `${pathDest}/scripts`,
     },
     img: {
         src: `${pathSrc}/images/*.{png,jpg,jpeg,gif,svg}`,
