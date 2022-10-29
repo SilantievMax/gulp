@@ -153,7 +153,7 @@ export const watcher = () => {
 //Сборка
 export const build = series(
     clear,
-    parallel(html, scss, js, img, font) //css or scss
+    parallel(html, css, js, img, font) //css or scss
 );
 
 export const dev = series(build, parallel(watcher, server));

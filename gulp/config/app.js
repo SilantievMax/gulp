@@ -8,7 +8,7 @@ export default {
         collapseWhitespace: isProd,
     },
     webpack: {
-        mode: isProd ? "    " : "development",
+        mode: isProd ? "production" : "development",
     },
     imagemin: {
         verbose: true,
