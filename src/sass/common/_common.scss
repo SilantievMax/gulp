@@ -1,0 +1,25 @@
+body {
+    background: $bg-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.wrapper {
+    @include wrapper;
+    @extend %extend-wrapper;
+}
+
+@include laptop {
+    .wrapper {
+        @include wrapper(50px);
+    }
+}
+
+@include mobile {
+    .wrapper {
+        @include wrapper(10px);
+    }
+}

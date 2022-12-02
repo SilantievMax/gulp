@@ -1,0 +1,5 @@
+@mixin wrapper($p: $p-lr-wrapper, $w: $w-wrapper) {
+    max-width: $w + $p * 2;
+    padding-left: $p;
+    padding-right: $p;
+}

@@ -1,0 +1,9 @@
+.footer {
+    &__block {
+        display: flex;
+        justify-content: right;
+    }
+    &__copy {
+        font-size: 15px;
+    }
+}

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp</title>
-    <link rel="stylesheet" href="./styles/main.min.css">
-    <script src="scripts/main.js"></script>
+    @@include('components/common/head.html', {
+        title: "Portfolio"
+    })
 </head>
 <body>
-    @@include('components/header.html')
-    <h1>Hello world</h1>
-    <img src="images/gaim.png" alt="gaim">
-    @@include('components/footer.html')
+    @@include('components/common/header.html')
+    <main>
+        @@include('components/content.html') 
+    </main>
+    @@include('components/common/footer.html')
 </body>
 </html> 

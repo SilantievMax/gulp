@@ -80,8 +80,8 @@ export const scss = (cd) => {
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(gulpGroupCssMediaQueries())
-        .pipe(size({ title: "main.css" }))
-        .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
+        .pipe(gulpif(app.isDev, size({ title: "main.css" })))
+        .pipe(gulpif(app.isDev, dest(path.scss.dest, { sourcemaps: app.isDev })))
         .pipe(rename({ suffix: ".min" }))
         .pipe(csso())
         .pipe(size({ title: "main.min.css" }))
@@ -153,7 +153,7 @@ export const watcher = () => {
 //Сборка
 export const build = series(
     clear,
-    parallel(html, css, js, img, font) //css or scss
+    parallel(html, scss, js, img, font) //css or scss
 );
 
 export const dev = series(build, parallel(watcher, server));

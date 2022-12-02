@@ -1,0 +1,23 @@
+@include laptop {
+    .home {
+        &__heading {
+            font-size: 70px;
+        }
+
+        &__link {
+            font-size: 28px;
+        }
+    }
+}
+
+@include mobile {
+    .home {
+        &__heading {
+            font-size: 50px;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+}
